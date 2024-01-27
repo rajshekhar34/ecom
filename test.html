@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto-Moving Image</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .mySlides {
+            /* display: none; */
+            animation: slide 6s infinite; /* Adjust the animation duration as needed */
+        }
+
+        @keyframes slide {
+            25% { opacity: 1; }
+            40% { opacity: 0; }
+            50% { display: none; }
+            75% { display: block; }
+            100% { opacity: 1; }
+        }
+
+        img {
+            width: 100%; /* Ensure images fill the container width */
+        }
+    </style>
+</head>
+<body>
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <img src="f.png" alt="Slide 1">
+        </div>
+        <div class="mySlides">
+            <img src="f.png" alt="Slide 2">
+        </div>
+        <div class="mySlides">
+            <img src="f.png" alt="Slide 3">
+        </div>
+    </div>
+</body>
+</html>
